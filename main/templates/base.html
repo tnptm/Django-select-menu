@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 <style>
-.main {
-    font-family: Arial;
-}
+
 header {
     background-color: lavenderblush;
     padding: 2em;
@@ -19,16 +20,19 @@ header {
 .hdr-info {
     font-size: .7em;
 }
+label {
+    font-size: larger;
+}
 
 </style>
 
 </head>
 <body>
-    <div class="main">
+    <div class="main ">
         <header>
            <h1>{% block header %}{% endblock %} </h1>
         </header>
-        <div>
+        <div class="container-md">
             {% block content %}{% endblock %}
         </div>
     </div>
