@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Test page {% endblock %}
+
+{% block header %}
+{{ welcome|safe }}
+{% endblock %}
+
+{% block content %}
+{{ proj }}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
