@@ -7,3 +7,8 @@ class ProjectsSelectForm(forms.Form):
         empty_label="Select a project",
         widget=forms.Select(attrs={'class': 'form-control bg-primary text-white'}),
     )
+
+class ArticleForm(forms.Form):
+    title = forms.CharField()
+    pub_date = forms.DateField()
+

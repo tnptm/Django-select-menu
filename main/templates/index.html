@@ -12,6 +12,7 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
+    {{ article_fields.as_table }}
     <button type="submit" class="btn btn-success">Submit</button>
 </form>
 <p></p>
@@ -19,7 +20,7 @@
     <h4>Result: </h4>
     <div class="card bg-light text-dark">
         <div class="card-body">
-            {{ proj }}
+            {{ proj }}: {{ article_data }}
         </div>
     </div>
 </div>
