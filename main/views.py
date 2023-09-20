@@ -9,10 +9,10 @@ def index(request):
     if request.method == 'POST':
         form = ProjectsSelectForm(request.POST)
         if form.is_valid():
-            # Do something with the selected project, e.g., redirect to a project-specific page
+            # Here is how to handle request parameters like redirecting to another projects-specific page
             selected_project = form.cleaned_data['projects']
             proj = selected_project
-            # ...
+            
     else:
         form = ProjectsSelectForm()
     
