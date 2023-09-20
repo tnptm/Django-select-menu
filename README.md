@@ -25,4 +25,4 @@ $ python manage.py createsuperuser
 $ python manage.py runserver
 ```
 
-Then you can go with browser to `localhost:8000/admin/` (usually default for Django page) and add as meny projects as you like.
+Then you can go with browser to `localhost:8000/admin/` and add as meny projects as you like.
