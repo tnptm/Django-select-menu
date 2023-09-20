@@ -4,21 +4,21 @@ This project is for showing simple way how to make with Django a view where is t
 ## How to install Django and this code?
 At first you need to make sure, you have [Python](https://python.org) installed. I'm using here Python's own virtual environment. Go to directory you want to install this repository in your terminal (This is for Linux).
 
-`$ cd [DIR]
-$ python -m venv venv
-$ . venv/bin/activate
-$ pip install django django-bootstrap-v5`
+`$ cd [DIR]`
+`$ python -m venv venv`
+`$ . venv/bin/activate`
+`$ pip install django django-bootstrap-v5`
 
 Download and extract this code to this direcory. Then we need to create SQLITE database for this. It can be done using Django with the following way. Go first to the directory where is file `manage.py` and then:
 
-`#Create Django models for the database``
+`#Create Django models for the database`
 `$ python manage.py makemigrations`
 
 `#Create tables into database based on migrations`
-`$ python manage.py migrate``
+`$ python manage.py migrate`
 
 `#Create user for administrator site`
-`$ python manage.py createsuperuser ``
+`$ python manage.py createsuperuser `
 
 `#Run the server:`
 `$ python manage.py runserver`
