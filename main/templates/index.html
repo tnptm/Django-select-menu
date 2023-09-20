@@ -18,11 +18,13 @@
 <p></p>
 <div>
     <h4>Result: </h4>
+    {% if proj %}
     <div class="card bg-light text-dark">
         <div class="card-body">
             <strong>{{ proj }}</strong>: {{ article_data }}
         </div>
     </div>
+    {% endif %}
 </div>
 
 {% endblock %}
